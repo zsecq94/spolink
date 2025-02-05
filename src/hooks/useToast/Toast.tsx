@@ -18,7 +18,7 @@ import { useStyle } from '@/hooks'
 import { CText } from '@/components'
 
 const Toast = forwardRef((_, ref) => {
-  const { fonts, spacing, layout, borders, background } = useStyle()
+  const { fonts, spacing, layout, borders } = useStyle()
 
   const [message, setMessage] = useState<string>('')
   const [keyboardHeight, setKeyboardHeight] = useState<number>(0)
@@ -87,11 +87,9 @@ const Toast = forwardRef((_, ref) => {
         style={[
           layout.absolute,
           layout.z10,
-          spacing.py_8,
-          spacing.px_12,
-          spacing.gap_8,
-          borders.radius_12,
-          layout.row,
+          spacing.py_6,
+          spacing.px_8,
+          borders.radius_8,
           layout.alignCenter,
           toastContainerStyle,
           animatedStyle,

@@ -1,0 +1,12 @@
+export { default as kakao } from './kakao.svg'
+export { default as google } from './google.svg'
+export { default as appleDark } from './apple-dark.svg'
+export { default as appleLight } from './apple-light.svg'
+
+export { default as home } from './home.svg'
+export { default as team } from './team.svg'
+export { default as match } from './match.svg'
+export { default as guest } from './guest.svg'
+export { default as more } from './more.svg'
+export { default as notice } from './notice.svg'
+export { default as search } from './search.svg'

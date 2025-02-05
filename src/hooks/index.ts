@@ -1,1 +1,5 @@
-export { ThemeProvider } from './useTheme'
+export { default as useTheme } from './useTheme'
+export { ThemeProvider } from './useTheme/ThemeProvider'
+export { useStyle } from './useStyle'
+export { ToastProvider } from './useToast/ToastProvider'
+export { default as useToast } from './useToast'

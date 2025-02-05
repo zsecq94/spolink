@@ -1,11 +1,18 @@
-import { View, Text } from 'react-native'
 import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+
+import AppNav from './AppNav'
+import AuthNav from './AuthNav'
+import { useTheme } from '@/hooks'
+import { userStore } from '@/stores'
 
 const DefaultNavigation = () => {
+  const { navTheme } = useTheme()
+  const { user } = userStore()
   return (
-    <View>
-      <Text>DefaultNavigation</Text>
-    </View>
+    <NavigationContainer theme={navTheme}>
+      {user ? <AppNav /> : <AuthNav />}
+    </NavigationContainer>
   )
 }
 
